@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "title": "Project One",
+      "description": "A web app built with modern JavaScript.",
+      "image": "/images/project1.jpg",
+      "content": "This project showcases a dynamic web application with advanced JavaScript features."
+    },
+    {
+      "id": 2,
+      "title": "Project Two",
+      "description": "A responsive e-commerce site.",
+      "image": "/images/project2.jpg",
+      "content": "An e-commerce platform with seamless user experience and Tailwind CSS styling."
+    },
+    {
+      "id": 3,
+      "title": "Project Three",
+      "description": "A portfolio showcase with Tailwind CSS.",
+      "image": "/images/project3.jpg",
+      "content": "A personal portfolio site highlighting projects with modern design."
+    }
+  ]
