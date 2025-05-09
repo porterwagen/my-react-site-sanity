@@ -11,7 +11,7 @@ export default function Home() {
       
       <Layout>
         <h1 className="text-4xl font-bold text-blue-600 mb-8">
-          Welcome to My Portfolio!
+          Sanity + Next.js + Tailwind CSS
         </h1>
         <p className="text-lg text-gray-600">
           This is a test to confirm Tailwind CSS is working.
