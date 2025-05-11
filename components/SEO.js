@@ -27,12 +27,6 @@ export default function SEO({
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={canonical} />
       {ogImage && <meta property="og:image" content={`${origin}${ogImage}`} />}
-      
-      {/* Twitter Card */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={siteTitle} />
-      <meta name="twitter:description" content={description} />
-      {ogImage && <meta name="twitter:image" content={`${origin}${ogImage}`} />}
     </Head>
   );
 }
