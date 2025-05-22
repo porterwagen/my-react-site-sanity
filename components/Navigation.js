@@ -76,12 +76,12 @@ export default function Navigation() {
       }
     ],
     featured: {
-      title: "New Tutorial Series",
-      description: "Learn how to build amazing websites with our step-by-step guides",
-      image: "/images/project1.jpg",
+      title: "Mega Menu Example",
+      description: "This is a sample mega menu item that can include images, links, and more!",
+      image: "/images/mega-menu.jpg",
       cta: {
         label: "Get Started",
-        href: "/tutorials/series"
+        href: "#"
       }
     }
   };
@@ -91,6 +91,7 @@ export default function Navigation() {
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Projects", href: "/projects" },
+    { label: "Blog", href: "/blog" },
     { 
       label: "Resources", 
       hasDropdown: true,
@@ -152,11 +153,12 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="relative" ref={navRef}>
+    <nav className="relative container" ref={navRef}>
       <div className="flex justify-between items-center py-4">
         {/* Logo/Brand */}
-        <Link href="/" className="text-xl font-bold text-blue-600">
-          My Site
+        <Link href="/" className="flex items-center gap-2">
+          <img src="/code-logo.svg" alt="Code Logo" width="88" height="64" className="h-10 w-auto" />
+          <span className="text-xl font-bold text-black">Site Title</span>
         </Link>
         
         {/* Desktop Navigation */}

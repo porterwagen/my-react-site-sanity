@@ -22,6 +22,10 @@ export default function MobileNavigation({ isOpen, onClose }) {
       href: '/projects',
     },
     {
+      label: 'Blog',
+      href: '/blog',
+    },
+    {
       label: 'Products',
       children: [
         { label: 'Product Platform', href: '/products/platform' },
@@ -76,7 +80,6 @@ export default function MobileNavigation({ isOpen, onClose }) {
       label: 'Contact',
       href: '/contact',
     },
-    // Additional mobile-only items
     {
       label: 'Help & FAQ',
       href: '/help',

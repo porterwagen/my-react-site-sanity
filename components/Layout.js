@@ -1,16 +1,14 @@
 import Navigation from './Navigation';
+import Footer from './Footer';
 
-export default function Layout({ children }) {
+export default function Layout({ children, showGlobalBreadcrumbs = false }) {
   return (
-    <>
-      <div className="container mx-auto p-6">
+    <div className="flex flex-col min-h-screen">
+      <header>
         <Navigation />
-        <main>{children}</main>
-      </div>
-
-      {/* 
-      // Google Tag Manager noscript code is commented out for now
-      */}
-    </>
+      </header>
+      <main className="flex-grow">{children}</main>
+      <Footer />
+    </div>
   );
 }

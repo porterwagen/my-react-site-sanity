@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Script from 'next/script';
 import { useRouter } from 'next/router';
 
 export default function SEO({ 
@@ -8,7 +9,7 @@ export default function SEO({
   ogType = 'website'
 }) {
   const router = useRouter();
-  const siteTitle = `${title} | My React Site`;
+  const siteTitle = `${title}`;
   
   // Build canonical URL dynamically based on the current path
   const origin = typeof window !== 'undefined' ? window.location.origin : '';

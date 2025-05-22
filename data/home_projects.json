@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "title": "Home One",
+    "description": "An abstract reflection on the essence of belonging.",
+    "image": "/images/home-project-1.jpg",
+    "image_mobile": "/images/home-project-1-mobile.jpg",
+    "content": "A digital exploration of what it means to arrive, to settle, and to become."
+    },
+    {
+    "id": 2,
+    "title": "Home Two",
+    "description": "A creative interpretation of comfort and familiarity.",
+    "image": "/images/home-project-2.jpg",
+    "image_mobile": "/images/home-project-2-mobile.jpg",
+    "content": "A project that contemplates the patterns and rituals that define our sense of home."
+    },
+    {
+    "id": 3,
+    "title": "Home Three",
+    "description": "A conceptual journey into the meaning of being at home.",
+    "image": "/images/home-project-3.jpg",
+    "image_mobile": "/images/home-project-3-mobile.jpg",
+    "content": "An abstract interface inviting reflection on presence, memory, and identity."
+    }
+]

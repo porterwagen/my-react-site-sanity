@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app). It includes integration with WordPress CMS, contact form functionality, and Google Tag Manager implementation.
 
 ## Getting Started
 
@@ -19,6 +19,34 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
 [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+
+## Email Integration
+
+The contact form sends emails through a third-party email service. To configure your chosen email service:
+
+1. Open `utils/emailService.js` and implement your preferred email provider (examples for SendGrid provided as comments)
+2. Update your `.env.local` file with the appropriate API keys and credentials for your email service
+3. If needed, install the required packages for your chosen email provider. For example:
+   ```bash
+   # For SendGrid
+   npm install @sendgrid/mail
+   
+   # For Mailchimp Transactional/Mandrill
+   npm install @mailchimp/mailchimp_transactional
+   
+   # For AWS SES
+   npm install aws-sdk
+   ```
+
+## Google Tag Manager Integration
+
+The site includes Google Tag Manager integration for analytics and event tracking:
+
+1. Update the `.env.local` file with your Google Tag Manager ID:
+   ```
+   NEXT_PUBLIC_GTM_ID=GTM-YOURIDHERE
+   ```
+2. Form submissions are tracked via the dataLayer before redirection
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
 

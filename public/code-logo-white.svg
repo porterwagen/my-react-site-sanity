@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88" height="64" viewBox="0 0 88 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Black rounded square -->
+  <rect x="4" y="4" width="56" height="56" rx="12" fill="#fff"/>
+  <!-- Centered code icon -->
+  <text x="32" y="32" font-size="28" font-family="monospace" fill="#000" text-anchor="middle" dominant-baseline="middle">&lt;/&gt;</text>
+  <!-- Large black semicolon to the right of the square -->
+  <text x="76" y="32" font-size="56" font-family="monospace" fill="#fff" text-anchor="middle" dominant-baseline="middle">;</text>
+</svg>
